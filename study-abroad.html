@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Abroad - AYUSH EDUVIBE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">AYUSH <span>EDUVIBE</span></div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="study-abroad.html" class="nav-link active">Study Abroad</a>
+                <a href="exams.html" class="nav-link">Exams</a>
+                <a href="jobs.html" class="nav-link">Jobs</a>
+                <a href="services.html" class="nav-link">Services</a>
+            </div>
+            <button class="mobile-menu-btn" style="display:none; color:white; font-size: 24px;">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding-bottom: 50px;">
+        <div class="container text-center">
+            <h1>Global Education Opportunities</h1>
+            <p>Explore top universities and scholarships in popular countries.</p>
+        </div>
+    </section>
+
+    <!-- Country Selection / Filter -->
+    <section class="section">
+        <div class="container">
+            <h2 class="mb-2">Select Destination</h2>
+            <div class="grid grid-3">
+                <button data-country="USA" class="card text-center btn-secondary"
+                    style="height:auto; display:flex; flex-direction:column; align-items:center; padding: 2rem;">
+                    <img src="assets/flag_usa.png" alt="USA"
+                        style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover; box-shadow: 0 0 15px var(--primary);">
+                    <h3>USA</h3>
+                </button>
+                <button data-country="UK" class="card text-center btn-secondary"
+                    style="height:auto; display:flex; flex-direction:column; align-items:center; padding: 2rem;">
+                    <img src="assets/flag_uk.png" alt="UK"
+                        style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover; box-shadow: 0 0 15px var(--primary);">
+                    <h3>UK</h3>
+                </button>
+                <button data-country="Canada" class="card text-center btn-secondary"
+                    style="height:auto; display:flex; flex-direction:column; align-items:center; padding: 2rem;">
+                    <img src="assets/flag_canada.png" alt="Canada"
+                        style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover; box-shadow: 0 0 15px var(--primary);">
+                    <h3>Canada</h3>
+                </button>
+                <button data-country="Australia" class="card text-center btn-secondary"
+                    style="height:auto; display:flex; flex-direction:column; align-items:center; padding: 2rem;">
+                    <img src="assets/flag_australia.png" alt="Australia"
+                        style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover; box-shadow: 0 0 15px var(--primary);">
+                    <h3>Australia</h3>
+                </button>
+                <button data-country="Germany" class="card text-center btn-secondary"
+                    style="height:auto; display:flex; flex-direction:column; align-items:center; padding: 2rem;">
+                    <img src="assets/flag_germany.png" alt="Germany"
+                        style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover; box-shadow: 0 0 15px var(--primary);">
+                    <h3>Germany</h3>
+                </button>
+                <button data-country="All" class="card text-center btn-primary"
+                    style="height:auto; display:flex; flex-direction:column; align-items:center; padding: 2rem; border: 1px solid var(--primary);">
+                    <img src="assets/flag_global.png" alt="All"
+                        style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover; box-shadow: 0 0 15px #fff;">
+                    <h3>All</h3>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Rankings & Scholarships (Dynamic) -->
+    <section class="section" style="background: rgba(255,255,255,0.02)">
+        <div class="container">
+            <h2 class="mb-2">Top Universities & Scholarships</h2>
+
+            <div id="universities-list" class="grid grid-2">
+                <!-- Injected via script.js -->
+                <p>Loading universities...</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
